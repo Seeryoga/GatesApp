@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Разрешение на прямой телефонный вызов без открытия приложения "Телефон" -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_gate_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_gate_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GateOpener">
+
+        <!-- Главное окно настроек приложения и экран конфигурации виджета -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Прозрачная невидимая Activity для мгновенного совершения звонка по нажатию кнопки на виджете -->
+        <activity
+            android:name=".CallActionActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.TransparentCall" />
+
+        <!-- Провайдер виджета 4x2 -->
+        <receiver
+            android:name=".GateWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/gate_widget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>

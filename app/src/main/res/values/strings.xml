@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ворота</string>
+    <string name="widget_name">Открыть ворота (4×2)</string>
+    <string name="open_gate_btn">Открыть ворота</string>
+    <string name="phone_label">Номер телефона ворот / шлагбаума</string>
+    <string name="phone_hint">+7 (900) 000-00-00</string>
+    <string name="title_label">Подпись на виджете (необязательно)</string>
+    <string name="title_hint">Оставьте пустым или укажите название</string>
+    <string name="widget_theme_label">Тема кнопки на виджете</string>
+    <string name="theme_dark_btn">Тёмная кнопка</string>
+    <string name="theme_light_btn">Светлая кнопка</string>
+    <string name="choose_bg_btn">Выбрать фоновое изображение из галереи</string>
+    <string name="reset_bg_btn">Вернуть стандартный 3D-фон ворот</string>
+    <string name="save_btn">Сохранить и обновить виджет</string>
+    <string name="test_call_btn">Проверить звонок сейчас</string>
+    <string name="preview_label">Предпросмотр виджета (4×2)</string>
+    <string name="permission_granted">✓ Разрешение на прямой звонок выдано</string>
+    <string name="permission_missing">⚠ Требуется разрешение на прямые звонки (нажмите здесь)</string>
+</resources>

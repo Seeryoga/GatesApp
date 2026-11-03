@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2E7D32</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="accent">#4CAF50</color>
+
+    <!-- Тёмная и светлая темы для кнопки на виджете -->
+    <color name="widget_btn_dark_bg">#E622252A</color>
+    <color name="widget_btn_dark_text">#FFFFFF</color>
+    <color name="widget_btn_light_bg">#F2FFFFFF</color>
+    <color name="widget_btn_light_text">#1A1C1E</color>
+
+    <!-- Тёмные инпуты на экране настроек для высокой контрастности -->
+    <color name="input_dark_bg">#1E2228</color>
+    <color name="input_dark_text">#FFFFFF</color>
+    <color name="input_dark_hint">#B0BEC5</color>
+    <color name="input_dark_stroke">#4CAF50</color>
+
+    <color name="widget_card_bg">#D7CCC8</color>
+    <color name="white">#FFFFFF</color>
+</resources>
